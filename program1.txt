@@ -1,0 +1,15 @@
+var w
+var x
+var y
+var z
+initialize w = 5
+initialize x = 10
+initialize y = 15
+initialize z = 20
+compute w = x + y + z
+if x = y then
+ output w
+ output x
+endif
+output y
+output z

@@ -1,0 +1,9 @@
+var w
+var x
+initialize w = 5
+initialize x = 10
+output w
+output x
+if w x then
+ output w
+endif
