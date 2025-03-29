@@ -1,0 +1,13 @@
+= 23423 23423 3asdfasdfa
+SCANOF ID CONSTINT VAR OUTPUT INITIALIZE EQUALS IF THEN ENDIF COMPUTE PLUS EOF
+
+al;skdjf;lkaj sdlkfja ;lskdj;f kas;lkjf asdf as=-f=a s-d=- fas
+
+check for end of file
+
++
+
+
+-
+
+=
