@@ -1,0 +1,15 @@
+var a
+var b
+var c
+var result
+initialize a = 5
+initialize b = 20
+initialize c = 15
+compute result = a + b
+if a = b then
+    output result
+endif
+compute result = a + c
+if result = b then
+    output result
+endif

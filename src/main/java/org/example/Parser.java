@@ -172,22 +172,24 @@ public class Parser {
         }
     }
 
-    private AbsSynTree.NodeExpr add() throws Exception {
-        AbsSynTree.NodeExpr left = value();
-        if (nextToken == Scanner.TOKEN.PLUS) {
-            match(Scanner.TOKEN.PLUS);
-            AbsSynTree.NodeExpr right = add();
-            return absSynTree.new NodePlus(left, right);
-        } else {
-            return left;
-        }
-    }
-
+//    // This creates the correct output but its right to left
 //    private AbsSynTree.NodeExpr add() throws Exception {
-//        AbsSynTree.NodeExpr leftExpr = value();
-//        return addEnd(leftExpr);
+//        AbsSynTree.NodeExpr left = value();
+//        if (nextToken == Scanner.TOKEN.PLUS) {
+//            match(Scanner.TOKEN.PLUS);
+//            AbsSynTree.NodeExpr right = add();
+//            return absSynTree.new NodePlus(left, right);
+//        } else {
+//            return left;
+//        }
 //    }
-
+    
+    // This is left to right but the generated output is not the same as the one given to us.
+    private AbsSynTree.NodeExpr add() throws Exception {
+        AbsSynTree.NodeExpr leftExpr = value();
+        return addEnd(leftExpr);
+    }
+    
     private AbsSynTree.NodeExpr value() throws Exception {
         if (nextToken == Scanner.TOKEN.ID) {
             String varName = scanner.getBuffer();
